@@ -15,9 +15,7 @@ def reduce(source_array, starting_value = nil)
     accumulator = source_array[0]
   end
   source_array.length.times { |index|
-    if (index == 0) {
-      continue
-    }
+    next if index == 0
     accumulator = yield(accumulator, source_array[index])
   }
    return accumulator
