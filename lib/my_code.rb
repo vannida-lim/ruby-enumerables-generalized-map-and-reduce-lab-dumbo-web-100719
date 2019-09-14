@@ -10,10 +10,8 @@ end
 
 def reduce(source_array, starting_value = nil)
   if starting_value 
-    reduction = starting_value
-    i = 0
+    accumulator = starting_value
   else reduction = source_array[0]
-    i = 1 
   end
   array.length.times { |index|
     reduction = yield(reduction, source_array[i])
