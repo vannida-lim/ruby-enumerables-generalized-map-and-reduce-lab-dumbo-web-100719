@@ -17,6 +17,10 @@ describe 'my own map' do
   it "returns an array with the original values squared" do
     expect(map([1, 2, 3, -9]){|n| n * n}).to eq([1, 4, 9, 81])
   end
+  
+  it "returns an array with original values + 1" do 
+    expect(map([1, 2, 3, 4]){|n| n +1}).to eq([2, 3, 4, 5])
+  end
 end
 
 describe 'my own reduce' do
