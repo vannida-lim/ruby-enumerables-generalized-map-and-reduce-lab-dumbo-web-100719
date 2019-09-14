@@ -8,7 +8,7 @@ def map (array)
   return new_array
 end
 
-def reduce(source_array, starting_value = nil)
+def reduce(source_array, *starting_value)
   if starting_value 
     accumulator = starting_value
   else 
